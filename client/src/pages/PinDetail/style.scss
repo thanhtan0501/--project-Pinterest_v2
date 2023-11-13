@@ -1,0 +1,515 @@
+@use "src/styles/styles" as style;
+
+.pin-detail-wrapper {
+    margin: 16px 0;
+    padding: 0 16px;
+    position: relative;
+    width: 100%;
+    @include style.Responsive(style.$MD) {
+        margin-top: 20px;
+    }
+    .back-btn {
+        display: none;
+        @include style.Responsive(style.$SM) {
+            display: flex;
+        }
+
+        button {
+            position: fixed;
+            z-index: 3;
+            top: 106px;
+
+            padding: 12px;
+            border-radius: 100rem;
+
+            background-color: style.$white;
+            &:hover {
+                background-color: #f0f0f0;
+                box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+                    0 2px 4px -2px rgb(0 0 0 / 0.1);
+            }
+        }
+    }
+    .pin-detail-container {
+        display: flex;
+        // justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        margin: auto;
+        border-radius: 32px;
+
+        max-width: 508px;
+        // min-height: 500px;
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        background-color: style.$white;
+        box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.15);
+        @include style.Responsive(style.$LG) {
+            flex-direction: row;
+            max-width: 90%;
+        }
+        .pin-detail-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            max-width: 100%;
+
+            @include style.Responsive(style.$LG) {
+                padding: 20px 0 20px 20px;
+
+                align-items: flex-start;
+                max-width: 50%;
+            }
+            .image {
+                width: 100%;
+                // height: 100%;
+                img {
+                    border-radius: 16px;
+                }
+            }
+            .backdrop-container {
+                padding: 20px;
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                width: 100%;
+                .destination-link {
+                    display: flex;
+                    gap: 8px;
+                    flex-grow: 1;
+                    max-width: 65%;
+                    a.link {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 8px;
+
+                        outline: none;
+                        overflow: hidden;
+                        color: #111;
+                        background-color: style.$white;
+
+                        width: max-content;
+                        height: 32px;
+                        border-radius: 100rem;
+                        padding: 8px 12px;
+
+                        opacity: 0.8;
+                        font-size: 14px;
+                        font-weight: 600;
+
+                        transition-property: all;
+                        transition-duration: 0.2s;
+                        transition-timing-function: cubic-bezier(
+                            0.175,
+                            0.8,
+                            0.32,
+                            1.2
+                        );
+
+                        &:hover {
+                            opacity: 0.9;
+                            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+                                0 2px 4px -2px rgb(0 0 0 / 0.1);
+                        }
+
+                        .link-title {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pin-detail-info {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            .pin-detail-content {
+                // display: flex;
+                // justify-content: space-between;
+                // align-items: flex-start;
+                // flex-direction: column;
+                // gap: 20px;
+                padding: 20px 30px 0;
+
+                width: 100%;
+                height: 100%;
+
+                .pin-detail-content-top {
+                    position: sticky;
+                    top: 80px;
+                    z-index: 10;
+                    padding: 12px 0 20px;
+
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: style.$white;
+                    align-items: center;
+
+                    width: 100%;
+                    .btn-save {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        button {
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
+
+                            padding: 12px 16px;
+                            border-radius: 24px;
+                            color: style.$white;
+
+                            transition-duration: 0.2s;
+                        }
+                        .wrapper-btn-save {
+                            position: relative;
+
+                            .save {
+                                background-color: #e60023;
+
+                                &:hover {
+                                    background-color: #ad081b;
+                                    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+                                        0 2px 4px -2px rgb(0 0 0 / 0.1);
+                                }
+                            }
+                            .saved {
+                                background-color: style.$black;
+                                opacity: 0.8;
+
+                                &:hover {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+
+                    .options-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 2px;
+                        position: relative;
+
+                        .option {
+                            width: 44px;
+                            height: 44px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 100rem;
+                            background-color: style.$white;
+                            color: #111;
+                            transition-duration: 0.2s;
+
+                            &:hover {
+                                background-color: #f0f0f0;
+                                box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+                                    0 2px 4px -2px rgb(0 0 0 / 0.1);
+                            }
+                            &.active {
+                                background-color: style.$black;
+                                color: style.$white;
+                            }
+                        }
+                        .more-option-modal {
+                            position: absolute;
+                            left: -50px;
+                            top: 50px;
+                            z-index: 4;
+
+                            min-width: 180px;
+                            min-height: 40px;
+
+                            border-radius: 16px;
+                            background-color: style.$white;
+                            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+                            padding: 8px;
+                            button {
+                                font-size: 14px;
+                                font-weight: 600;
+                                text-align: left;
+                                width: 100%;
+                                border-radius: 8px;
+
+                                padding: 12px;
+                                background-color: transparent;
+                                &:hover {
+                                    background-color: #e9e9e9;
+                                }
+                            }
+                        }
+                    }
+                }
+                .pin-detail-content-main {
+                    overflow-y: scroll;
+                    padding-right: 5px;
+                    height: 100%;
+                    width: 100%;
+                    .pin-detail-content-main-container {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+
+                        overflow-y: auto;
+                        .pin-link {
+                            text-decoration: underline;
+
+                            color: #111;
+                            width: max-content;
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 400;
+                        }
+                        .pin-description {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 16px;
+                            color: #111;
+                            overflow: hidden;
+                            word-wrap: break-word;
+                            word-break: break-word;
+                            white-space: -moz-pre-wrap;
+                            white-space: pre-wrap;
+                            .title {
+                                width: max-content;
+                                font-size: 28px;
+                                font-weight: 600;
+                            }
+                            .about {
+                                color: #5a5a5a;
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                                .more {
+                                    color: #111;
+                                    font-weight: 600;
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+
+                                    cursor: pointer;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                        .pin-info {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                            .user-profile {
+                                display: flex;
+                                gap: 8px;
+                                align-items: center;
+                                width: max-content;
+
+                                .avatar {
+                                    width: 48px;
+                                    height: 48px;
+                                    border-radius: 100rem;
+                                }
+                                .user-icon-wrapper {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 48px;
+                                    height: 48px;
+                                    padding: 10px;
+                                    border-radius: 100rem;
+                                    background-color: #e9e9e9;
+                                    svg {
+                                        width: 48px;
+                                        height: 48px;
+                                    }
+                                }
+                                .user-name {
+                                    color: #111;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    overflow: hidden;
+
+                                    word-wrap: break-word;
+                                    word-break: break-word;
+                                    white-space: -moz-pre-wrap;
+                                    white-space: pre-wrap;
+                                }
+                            }
+                            .follow-user-btn {
+                                button {
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    // background-color: transparent;
+
+                                    padding: 12px 16px;
+                                    border-radius: 24px;
+
+                                    transition-duration: 0.2s;
+                                }
+                                .follow {
+                                    color: style.$black;
+
+                                    &:hover {
+                                        background-color: #e9e9e9;
+                                    }
+                                }
+                                .followed {
+                                    color: style.$white;
+
+                                    background-color: style.$black;
+                                    opacity: 0.8;
+
+                                    &:hover {
+                                        opacity: 1;
+                                        background-color: style.$black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .pin-detail-content-main-comments {
+                        margin: 20px 0;
+                        font-size: 16px;
+                        font-weight: 400;
+
+                        h2 {
+                            color: #111;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                        .list-comments {
+                            margin-top: 24px;
+                        }
+                    }
+                }
+            }
+            .pin-detail-comment {
+                position: sticky;
+                bottom: 0;
+                padding: 20px 30px;
+                border-top: 1px solid rgb(239, 239, 239);
+                background-color: style.$white;
+                border-radius: 0 0 32px 32px;
+                overflow: hidden;
+
+                .pin-input-comment {
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 8px;
+                    .avatar {
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 100rem;
+                    }
+                    .user-icon-wrapper {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 48px;
+                        height: 48px;
+                        padding: 10px;
+                        border-radius: 100rem;
+                        background-color: #e9e9e9;
+                        svg {
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+
+                    .wrapper {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        background-color: #e9e9e9;
+
+                        border: 1px solid rgb(243 244 246);
+                        border-radius: 32px;
+
+                        transition-property: all;
+                        transition-duration: 0.3s;
+                        transition-timing-function: cubic-bezier(
+                            0.4,
+                            0,
+                            0.2,
+                            1
+                        );
+
+                        &:hover {
+                            background: #dadada;
+                        }
+                        &:focus-within {
+                            border-color: #cdcdcd;
+                            background-color: style.$white;
+                        }
+
+                        input,
+                        textarea {
+                            border-radius: 32px;
+                            flex: 1;
+                            font-size: 16px;
+                            line-height: 20px;
+                            padding: 16px 20px;
+                            background-color: transparent;
+                            max-height: 100px;
+
+                            &:focus {
+                                cursor: text;
+                            }
+                        }
+
+                        .send-btn {
+                            margin-right: 5px;
+                            color: style.$white;
+                            background-color: #e60023;
+
+                            border-radius: 100rem;
+
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 8px;
+
+                            &:hover {
+                                background-color: #ad081b;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .more-pin {
+        margin: 16px 0;
+        .more-pin-title {
+            padding: 12px 24px;
+            margin-bottom: 4px;
+
+            width: 100%;
+            font-size: 20px;
+            color: #111;
+        }
+    }
+}

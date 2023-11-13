@@ -1,0 +1,16 @@
+@use "src/styles/styles" as style;
+
+.nav-menu {
+    padding: 0 8px 8px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 16px);
+        background: rgba(22, 24, 35, 0.12);
+        transform: scaleY(0.5);
+        bottom: 0;
+    }
+}

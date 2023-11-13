@@ -1,0 +1,50 @@
+@use "src/styles/styles" as style;
+
+.account-item-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row !important;
+    gap: 8px;
+
+    padding: 0px 16px !important;
+    cursor: pointer;
+    box-shadow: none !important;
+    min-height: 40px;
+
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+    font-size: 16px;
+    font-weight: 400;
+    color: #111;
+
+    border-radius: 0px !important;
+
+    &:hover {
+        background-color: rgb(22, 24, 35, 0.06);
+    }
+    img.avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 100rem;
+    }
+    .user-icon-wrapper,
+    .search-icon {
+        width: 40px;
+        text-align: center;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        .name {
+            line-height: 24px;
+            font-weight: 600;
+        }
+        .username {
+            font-size: 12px;
+        }
+    }
+}

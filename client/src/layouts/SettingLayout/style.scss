@@ -1,0 +1,22 @@
+@use "src/styles/styles" as style;
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    width: 1150px;
+    max-width: 100%;
+    justify-content: space-between;
+    align-self: center;
+    flex-direction: column;
+    @include style.Responsive(style.$MD) {
+        flex-direction: row;
+    }
+    .content {
+        margin-right: 16px;
+        margin-left: 16px;
+        width: 692px;
+        max-width: 692px;
+        padding: 24px 0;
+        position: relative;
+    }
+}

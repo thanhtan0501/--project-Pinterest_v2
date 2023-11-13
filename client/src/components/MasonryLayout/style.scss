@@ -1,0 +1,34 @@
+@use "src/styles/styles" as style;
+
+.masonry-wrapper {
+    display: flex;
+
+    width: 100%;
+    padding: 0 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation: slide-fwd 1s linear infinite;
+
+    @include style.Responsive(style.$MD) {
+        padding: 0 48px;
+    }
+    @include style.Responsive(style.$LG) {
+        padding: 0 64px;
+    }
+    @include style.Responsive(style.$XL) {
+        padding: 0 80px;
+    }
+
+    @keyframes slide-fwd {
+        0% {
+            -webkit-transform: translateZ(0px);
+            transform: translateZ(0px);
+        }
+
+        100% {
+            -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+        }
+    }
+}

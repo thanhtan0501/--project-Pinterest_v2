@@ -1,0 +1,62 @@
+@use "src/styles/styles" as style;
+
+.input-upload-image-container {
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border: 2px dashed;
+
+    width: auto;
+    height: 470px;
+    padding: 12px;
+    border-radius: 12px;
+    .input-upload-image-label {
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+
+        .label-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            .label-content-up {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                gap: 16px;
+                font-size: 14px;
+                text-align: center;
+                font-weight: 400;
+
+                .label-content-icon {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+
+                .upload-text {
+                    color: #111;
+                }
+                .warning-icon {
+                    color: #c00;
+                }
+            }
+            .label-content-down {
+                position: absolute;
+                z-index: 2;
+                margin: 32px;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 12px;
+                text-align: center;
+                inset: 0;
+                top: unset;
+            }
+        }
+    }
+}

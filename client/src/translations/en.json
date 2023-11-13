@@ -1,0 +1,118 @@
+{
+    "login": {
+        "login": "Login",
+        "logout": "Log Out",
+        "register": "Register",
+        "username": "Username",
+        "password": "Password",
+        "userpass-wrong": "Invalid username or password!"
+    },
+    "modal": {
+        "auth": {
+            "login": "Login",
+            "register": "Register",
+            "first-name": "First Name",
+            "last-name": "Last Name",
+            "email": "Email",
+            "password": "Password",
+            "confirm-password": "Confirm Password",
+            "or": "Or",
+            "miss-email": "You missed something! Don't forget to add your email address.",
+            "miss-parameter": "You missed something!",
+            "wrong-password": "Password or email is incorrect. Please try again!",
+            "wrong-user": "User already exists. Please try other email!!!"
+        },
+        "pin": {
+            "more": {
+                "title": "This Pin was inspired by your recent activity",
+                "download-image": "Download Image",
+                "delete-pin": "Delete Pin",
+                "report-pin": "Report Pin"
+            },
+            "edit": {
+                "title": "Edit this Pin",
+                "placeholder-title": "Add your title",
+                "pin-title": "Title",
+                "pin-about": "About",
+                "placeholder-about": "Tell everyone what your Pin is about",
+                "pin-destination": "Destination link",
+                "placeholder-destination": "Add a destination link",
+                "delete": "Delete",
+                "save": "Save",
+                "cancel": "Cancel"
+            }
+        }
+    },
+    "header": {
+        "home": "Home",
+        "create": "Create",
+        "search": "Search",
+        "notification": "Notifications",
+        "message": "Messages",
+        "profile": {
+            "title": "Account and more options",
+            "your-account": "Your account",
+            "more-options": "More Options",
+            "setting": "Settings",
+            "terms-of-service": "Terms Of Service",
+            "privacy-policy": "Privacy Policy",
+            "logout": "Log Out"
+        },
+        "login": "Login",
+        "register": "Register"
+    },
+    "page": {
+        "home": {
+            "pin": {
+                "save": "Save",
+                "saved": "Saved"
+            }
+        },
+        "create": {
+            "save": "Save",
+            "upload-text": "Drag and drop or click to upload",
+            "warning-text": "An image is required to create a Pin.",
+            "warning-image": "Recommendation: Use high-quality .jpg, .svg, .png or .gif files less than 20MB",
+            "placeholder-title": "Add your title",
+            "description-title": "Your first 40 characters are what usually show up in feeds",
+
+            "placeholder-about": "Tell everyone what your Pin is about",
+            "description-about": "People will usually see the first 50 characters when they click on your Pin",
+            "placeholder-destination": "Add a destination link"
+        },
+        "pin-detail": {
+            "menu": {
+                "edit": "Edit Pin",
+                "report": "Report Pin"
+            },
+            "save": "Save",
+            "saved": "Saved",
+            "follow": "Follow",
+            "followed": "Followed",
+            "more": "More",
+            "hide": "Hide",
+            "comment": {
+                "title": "Comments",
+                "no-comment": "No comments yet! Add one to start the conversation.",
+                "comment-input-placeholder": "Add a comment"
+            },
+            "more-like": "More like this"
+        },
+        "profile": {
+            "saved": "Saved",
+            "following": "Following",
+            "followers": "Followers",
+            "create": "Create",
+            "created": "Created",
+            "follow": "Follow",
+            "followed": "Followed",
+            "edit-profile": "Edit Profile",
+            "no-pin": "Inspire with an Idea Pin",
+            "no-save": "haven't saved any Pins yet",
+            "find-idea": "Find ideas"
+        }
+    },
+    "message": {
+        "available": "No Pins available"
+    }
+}

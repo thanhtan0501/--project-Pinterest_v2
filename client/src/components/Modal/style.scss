@@ -1,0 +1,20 @@
+@use "src/styles/styles" as style;
+
+.backdrop {
+    position: fixed;
+    // position: absolute;
+    inset: 0;
+    z-index: 1002;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    opacity: 0;
+    transition: opacity 0.5 ease;
+
+    &.show {
+        opacity: 1;
+    }
+}

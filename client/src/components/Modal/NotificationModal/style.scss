@@ -1,0 +1,29 @@
+@use "src/styles/styles" as style;
+
+.notification-wrapper {
+    position: absolute;
+    z-index: 2;
+    bottom: -3px;
+    right: 50%;
+
+    opacity: 0.5;
+    transform: translate(50%, 100%);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.175, 0.8, 0.32, 1.2);
+
+    width: 100%;
+    min-width: 200px; // 300
+    max-width: 350px; // 484
+    min-height: 250px;
+    max-height: 100vh;
+
+    border-radius: 16px;
+
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+    &.show {
+        opacity: 1;
+        transform: translate(-40%, 95%) opacity;
+    }
+}

@@ -1,0 +1,115 @@
+{
+    "login": {
+        "login": "Đăng nhập",
+        "logout": "Đăng xuất",
+        "register": "Đăng ký",
+        "username": "Tên đăng nhập",
+        "password": "Mật khẩu",
+        "userpass-wrong": "Sai tên đăng nhập hoặc mật khẩu!"
+    },
+    "modal": {
+        "auth": {
+            "login": "Đăng nhập",
+            "register": "Đăng ký",
+            "first-name": "Tên",
+            "last-name": "Họ",
+            "email": "Email",
+            "password": "Mật khẩu",
+            "confirm-password": "Nhập lại mật khẩu",
+            "or": "Hoặc",
+            "miss-email": "Bạn đã bỏ lỡ điều gì đó! Đừng quên thêm địa chỉ email của bạn.",
+            "miss-parameter": "Bạn đã bỏ lỡ điều gì đó!",
+            "wrong-password": "Mật khẩu hoặc email không chính xác. Vui lòng thử lại!",
+            "wrong-user": "Email đã tồn tại. Vui lòng thử email khác!!!"
+        },
+        "pin": {
+            "more": {
+                "title": "Ghim này được lấy cảm hứng từ hoạt động gần đây của bạn",
+                "download-image": "Tải hình ảnh xuống",
+                "delete-pin": "Xóa Ghim",
+                "report-pin": "Báo cáo Ghim"
+            },
+            "edit": {
+                "title": "Chỉnh sửa Ghim này",
+                "pin-title": "Tiêu đề",
+                "pin-about": "Mô tả",
+                "pin-destination": "Liên kết",
+                "delete": "Xóa",
+                "save": "Lưu",
+                "cancel": "Hủy"
+            }
+        }
+    },
+    "header": {
+        "home": "Trang chủ",
+        "create": "Tạo",
+        "search": "Tìm kiếm",
+        "notification": "Thông báo",
+        "message": "Tin nhắn",
+        "profile": {
+            "title": "Tài khoản và các tùy chọn khác",
+            "your-account": "Tài khoản của bạn",
+            "more-options": "Tùy chọn khác",
+            "setting": "Cài đặt",
+            "terms-of-service": "Xem điều khoản dịch vụ",
+            "privacy-policy": "Xem chính sách quyền riêng tư",
+            "logout": "Đăng xuất"
+        },
+        "login": "Đăng nhập",
+        "register": "Đăng ký"
+    },
+    "page": {
+        "home": {
+            "pin": {
+                "save": "Lưu",
+                "saved": "Đã Lưu"
+            }
+        },
+        "create": {
+            "save": "Lưu",
+            "upload-text": "Chọn một tệp hoặc kéo và thả tệp ở đây",
+            "warning-text": "Cần có hình ảnh để tạo Ghim.",
+            "warning-image": "Khuyến nghị: Sử dụng các tệp .jpg, .svg, .png hoặc .gif chất lượng cao dưới 20MB",
+            "placeholder-title": "Thêm tiêu đề",
+            "description-title": "40 ký tự đầu tiên của bạn là những ký tự thường hiển thị trong nguồn cấp dữ liệu.",
+
+            "placeholder-about": "Thêm mô tả chi tiết",
+            "description-about": "Mọi người thường sẽ nhìn thấy 50 ký tự đầu tiên khi họ nhấp vào Ghim của bạn",
+            "placeholder-destination": "Thêm liên kết"
+        },
+        "pin-detail": {
+            "menu": {
+                "edit": "Chỉnh sửa ghim",
+                "report": "Báo cáo ghim"
+            },
+            "save": "Lưu",
+            "saved": "Đã Lưu",
+            "follow": "Theo dõi",
+            "followed": "Đang theo dõi",
+            "more": "Xem Thêm",
+            "hide": "Ẩn",
+            "comment": {
+                "title": "Bình Luận",
+                "no-comment": "Chưa có bình luận nào! Thêm một bình luận để bắt đầu cuộc trò chuyện.",
+                "comment-input-placeholder": "Thêm một bình luận"
+            },
+            "more-like": "Có thể bạn sẽ thích"
+        },
+        "profile": {
+            "saved": "Saved",
+            "following": "Following",
+            "followers": "Followers",
+            "create": "Create",
+            "created": "Created",
+            "follow": "Theo dõi",
+            "followed": "Đang theo dõi",
+            "edit-profile": "Chỉnh sửa hồ sơ",
+            "no-pin": "Truyền cảm hứng với một Ghim ý tưởng",
+            "no-save": "chưa lưu bất kỳ Ghim nào",
+            "find-idea": "Tìm ý tưởng"
+        }
+    },
+    "message": {
+        "available": "Không có Ghim nào"
+    }
+}

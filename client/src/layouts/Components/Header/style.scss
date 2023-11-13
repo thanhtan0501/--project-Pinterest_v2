@@ -1,0 +1,89 @@
+@use "src/styles/styles" as style;
+
+.header-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1002;
+
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 12px 0px;
+    transition: box-shadow 300ms ease-in-out 0s;
+
+    background-color: style.$white;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 16px 8px;
+    @include style.Responsive(style.$MD) {
+        gap: 4px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .nav-image-wrapper {
+        width: 48px;
+        height: 48px;
+
+        .nav-image {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100rem;
+
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            img,
+            svg {
+                width: 24px;
+                height: 24px;
+                border-radius: 9999px;
+                margin: 0;
+            }
+
+            .avatar-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &.image-active {
+                .avatar-wrapper {
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 9999px;
+                    border: 2px solid;
+                    border-color: rgb(17, 17, 17);
+                }
+            }
+            &:hover {
+                background-color: #e9e9e9;
+            }
+        }
+    }
+    .nav-more-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        border-radius: 100rem;
+        cursor: pointer;
+
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        button {
+            height: 100%;
+            border-radius: 100rem;
+            cursor: pointer;
+            background-color: #fff;
+            &:hover {
+                background-color: #e9e9e9;
+            }
+        }
+    }
+}

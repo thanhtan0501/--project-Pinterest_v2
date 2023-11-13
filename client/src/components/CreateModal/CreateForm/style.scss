@@ -1,0 +1,87 @@
+@use "src/styles/styles" as style;
+
+.create-form-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 16px;
+
+    .title {
+        textarea {
+            padding: 6px 8px 8px 0;
+            font-size: 16px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+
+            @include style.FocusForm;
+            @include style.Responsive(style.$SM) {
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        margin-bottom: 12px;
+        background-color: style.$white;
+
+        border-radius: 12px;
+
+        .image {
+            border-radius: 100rem;
+            width: 48px;
+            height: 48px;
+
+            img {
+                border-radius: 100rem;
+            }
+            svg {
+                background-color: #e9e9e9;
+                padding: 4px;
+                border-radius: 100rem;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        span {
+            font-size: 14px;
+            font-weight: 600;
+            color: #111;
+        }
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        textarea {
+            font-weight: 400;
+            padding: 6px 8px 20px 20px;
+            font-size: 16px;
+            line-height: 24px;
+            @include style.FocusForm;
+
+            &:focus {
+                &::placeholder {
+                    color: #cdcdcd;
+                }
+            }
+        }
+    }
+}
+
+.create-form-link {
+    input {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 6px 0px 8px;
+        @include style.FocusForm;
+    }
+}

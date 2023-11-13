@@ -1,0 +1,9 @@
+@use "src/styles/styles" as style;
+
+.home-wrapper {
+    height: 10000px;
+    padding-top: 12px;
+    .home-container {
+        height: 100%;
+    }
+}
