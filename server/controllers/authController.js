@@ -15,7 +15,6 @@ export const handleLogin = async (req, res) => {
         email,
         password
     );
-    console.log(access_token);
     // set cookies
     res.cookie("jwt", access_token, {
         httpOnly: true,
