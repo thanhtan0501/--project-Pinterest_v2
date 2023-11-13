@@ -28,6 +28,7 @@ export const verifyJWT = (token) => {
 
 export const checkUserJWT = (req, res, next) => {
     if (nonSecurePaths.includes(req.path)) {
+        console.log("error");
         return next();
     }
     const cookies = req.cookies;
